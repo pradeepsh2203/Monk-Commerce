@@ -23,10 +23,10 @@ export const Card: React.FC<Props> = ({ type, feats, price }) => {
 			<div>
 				<Price>
 					{price === undefined ? (
-						<strong style={{ fontWeight: 500 }}>Free</strong>
+						<strong style={{ fontWeight: 600 }}>Free</strong>
 					) : (
 						<>
-							<strong style={{ fontWeight: 500 }}>
+							<strong style={{ fontWeight: 600 }}>
 								${price}
 							</strong>
 							/mo

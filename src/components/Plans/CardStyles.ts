@@ -11,17 +11,17 @@ export const CardContainer = styled.div<TypeProps>`
     justify-content:space-between;
     text-align:center;
     width:max-content;
-    padding: 80px 55px 50px 55px;
+    padding: 60px 55px 50px 55px;
     border:1px solid ${p => {
         if (p.focus === true) return p.theme.focus;
         return "#ddd";
     }};
     border-radius:10px;
-    margin: 30px 0;
+    margin: 20px 0;
 `;
 
 export const Heading = styled.h2`
-    font-weight : 500;
+    font-weight : 600;
     font-size:18px;
     line-height:30px;
     color:${p => p.theme.primary};
@@ -56,7 +56,7 @@ export const Button = styled.button<TypeProps>`
 
 export const Price = styled.p`
     font-size:25px;
-    font-weight:400;
+    font-weight:300;
     line-height:30px;
-    color: ${p => p.theme.primary}
+    color: ${p => p.theme.primary};
 `;
