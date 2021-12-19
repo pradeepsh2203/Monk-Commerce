@@ -6,6 +6,11 @@ export const FooterContainer = styled.div`
     display:grid;
     grid-template-columns:auto auto auto auto auto;
     justify-content:space-between;
+    
+    @media (max-width:850px){
+        grid-template-columns: auto auto auto;
+        grid-row-gap:50px;
+    }
 `;
 
 export const InfoContanier = styled.div`
@@ -13,6 +18,10 @@ export const InfoContanier = styled.div`
     max-width:340px;
     grid-column-start:1;
     grid-column-end:3;
+    @media (max-width:850px){
+        grid-column-end:4;
+        max-width:100%;
+    }
 `;
 
 export const Heading = styled.h3`
@@ -21,6 +30,11 @@ export const Heading = styled.h3`
     font-weight:600;
     color:${p => p.theme.primary};
     margin-top:0;
+
+    @media (max-width:500px){
+        font-size:14px;
+        line-height:25px;
+    }
 `;
 
 export const Text = styled.p`
@@ -30,6 +44,11 @@ export const Text = styled.p`
     color:${p => p.theme.secondary};
     margin:10px 0;
     padding:0;
+
+    @media (max-width:500px){
+        font-size:12px;
+        line-height:25px;
+    }
 `;
 
 export const Copyright = styled.p`
@@ -39,4 +58,9 @@ export const Copyright = styled.p`
     color:#AFB5C0;
     margin:10px 0;
     padding:0;
+
+    @media (max-width:500px){
+        font-size:12px;
+        line-height:25px;
+    }
 `;
