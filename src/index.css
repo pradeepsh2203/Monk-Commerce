@@ -7,12 +7,12 @@
 }
 @media all and (max-width: 1000px) {
 	:root {
-		--padding-sides: 70px;
+		--padding-sides: 60px;
 	}
 }
 @media all and (max-width: 500px) {
 	:root {
-		--padding-sides: 60px;
+		--padding-sides: 40px;
 	}
 }
 body {
