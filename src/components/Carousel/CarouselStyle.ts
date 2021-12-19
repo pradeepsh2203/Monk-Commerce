@@ -3,12 +3,17 @@ import styled from "styled-components";
 export const Heading = styled.h1`
     font-size:35px;
     line-height:50px;
-    font-weight:500;
+    font-weight:600;
     color:${p => p.theme.primary};
     width:100%;
     max-width:450px;
     margin:20px auto;
     text-align:center;
+
+    @media (max-width:500px){
+        font-size:25px;
+        line-height:40px;
+    }
 `;
 
 export const Text = styled.p`
@@ -20,6 +25,11 @@ export const Text = styled.p`
     max-width:555px;
     margin:20px auto;
     text-align:center;
+
+    @media (max-width:500px){
+        font-size:12px;
+        line-height:25px;
+    }
 `;
 
 export const CarouselContainer = styled.div`
@@ -40,7 +50,15 @@ export const CarouselContainer = styled.div`
 export const FlexContainer = styled.div`
     display:flex;
     justify-content:space-between;
-    padding:30px 120px 40px 0px;
+    padding:30px 0 40px 0px;
+    align-Items:center;
+    
+    @media (max-width:1000px){
+        padding:15px 0 20px 0;
+    }
+    @media (max-width:500px){
+        padding:0px 0 30px 0;
+    }
 `;
 
 export const CarouselNav = styled.ul`
@@ -88,4 +106,14 @@ export const Button = styled.button<ButtonProps>`
         if (p.disabled) return "no-drop";
         return "pointer"
     }};
+
+    @media (max-width:1000px){
+        width:50px;
+        height:50px;
+    }
+
+    @media (max-width:500px){
+        width:40px;
+        height:40px;
+    }
 `;
