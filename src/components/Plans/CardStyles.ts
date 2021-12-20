@@ -18,6 +18,10 @@ export const CardContainer = styled.div<TypeProps>`
     }};
     border-radius:10px;
     margin: 20px 0;
+
+    @media (max-width:400px){
+        padding: 30px;
+    }
 `;
 
 export const Heading = styled.h2`
