@@ -35,7 +35,7 @@ export const Text = styled.p`
 export const CarouselContainer = styled.div`
     display:flex;
     column-gap:50px;
-    overflow:auto;
+    overflow:hidden;
     align-items:stretch;
     align-content:stretch;
     -ms-overflow-style:none;

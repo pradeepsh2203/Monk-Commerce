@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Logo from "../../data/img/logo.svg";
+import { useScreenWidth } from "../../customHooks/getScreenWIdth";
 import "./header.css";
 
 export const Header: React.FC = () => {
 	const [IsNavVisible, setNavVisible] = useState(false);
 	let isScreenSizeSmall: boolean = false;
 
-	let [screenWidth, setScreenWidth] = useState(window.innerWidth);
-	useEffect(() => {
-		const changeWindowSize = () => setScreenWidth(window.innerWidth);
-		window.addEventListener("resize", changeWindowSize);
-		return () => window.removeEventListener("resize", changeWindowSize);
-	}, []);
+	let screenWidth = useScreenWidth();
 
 	if (screenWidth < 1000) isScreenSizeSmall = true;
 
